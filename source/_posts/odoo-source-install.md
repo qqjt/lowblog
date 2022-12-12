@@ -1,5 +1,5 @@
 ---
-title: Install Odoo from source
+title: 源代码方式安装 Odoo
 date: 2022-12-08
 updated: 2022-12-12
 ---
