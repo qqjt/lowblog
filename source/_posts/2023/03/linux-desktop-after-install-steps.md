@@ -1,7 +1,7 @@
 ---
 title: Linux Desktop After Install Steps
-date: 2022-12-12
-updated: 2022-12-12
+date: 2023-03-31
+updated: 2023-03-31
 ---
 ## 
 ```shell
