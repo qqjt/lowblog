@@ -1,5 +1,5 @@
 ---
-title: Linux Desktop After Install Steps
+title: Linux 桌面环境常用软件安装
 date: 2023-03-31
 updated: 2023-03-31
 ---
@@ -14,7 +14,7 @@ sudo apt install -y git vim openssh-server curl wget
 <https://ohmyz.sh/>
 
 ```shell
-sudo apt install zsh
+sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo reboot now # optional
 ```
