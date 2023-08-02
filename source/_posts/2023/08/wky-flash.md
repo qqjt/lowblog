@@ -43,9 +43,10 @@ updated: 2023-08-02
 
    短接的位置新旧版主板会有不同，引用下 [@powersee](https://powersee.github.io/2021/01/wankeyun-server/) 的图：
    老版本的在背面：
-   ![old.png](wky-flash/old.png)
+   ![old.png](old.png)
    我的是 V1.3 版的在正面：
-   ![new.png](wky-flash/new.png)
+   ![new.png](new.png)
+
 4. 等到软件提示烧录成功，点击“停止”，然后关闭软件，拔出 USB 线。
 
 这个步骤是最容易失败的，如果一直失败，可以换个USB口试试，USB 3.0、2.0 的都试试。
