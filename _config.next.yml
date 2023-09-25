@@ -659,7 +659,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active:
+  active: gitalk
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -708,11 +708,11 @@ livere_uid: # <your_uid>
 # For more information: https://gitalk.github.io
 gitalk:
   enable: true
-  github_id: ${GITALK_GITHUB_ID} # GitHub repo owner
-  repo: ${GITALK_REPO} # Repository name to store issues
-  client_id: ${GITALK_CLIENT_ID} # GitHub Application Client ID
-  client_secret: ${GITALK_CLIENT_SECRET} # GitHub Application Client Secret
-  admin_user: ${GITALK_ADMIN_USER} # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  github_id: qqjt # GitHub repo owner
+  repo: lowblog # Repository name to store issues
+  client_id: 57fdb23e375382f1c0ae # GitHub Application Client ID
+  client_secret: 0f6b914456290acad3cdf01fa10a6fb4461e6aac # GitHub Application Client Secret
+  admin_user: qqjt # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
