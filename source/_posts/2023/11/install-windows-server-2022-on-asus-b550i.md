@@ -1,8 +1,8 @@
 ---
 title: 华硕 B550i 主板安装 windows server 2022 并更新驱动
-tags: ['刷机', 'Armbian', '玩客云']
-date: 2023-11-18
-updated: 2023-11-18
+tags: ['Windows Server 2022', 'B550', 'Asus', '驱动']
+date: 2023-11-17
+updated: 2023-11-17
 ---
 
 记录下华硕 B550I 主板安装 Windows Server 2022 系统并打上各种驱动的过程。
@@ -49,8 +49,7 @@ updated: 2023-11-18
     %E15F3_3NC.DeviceDesc%    = E15F3_3.10.0.1..17763,      PCI\VEN_8086&DEV_15F3&REV_03
     ...
     ```
-- 复制下设备对应的行（我的是 `%E15F3_3NC.DeviceDesc%    = E15F3_3.10.0.1..17763,      PCI\VEN_8086&DEV_15F3&REV_03`），粘贴到 `[Intel.NTamd64.10.0...17763]` 下面：
-
+- 复制下设备对应的行（我的是 `PCI\VEN_8086&DEV_15F3&REV_03` ），粘贴到 `[Intel.NTamd64.10.0...17763]` 下面：
     ```
     [Intel.NTamd64.10.0...17763]
     ; DisplayName               Section                     DeviceID
@@ -81,8 +80,8 @@ Wi-Fi：<https://www.intel.cn/content/www/cn/zh/download/19351/windows-10-and-wi
 
 下载Windows 10 版本的安装包，解压后手动安装，参考 <https://linustechtips.com/topic/1391635-motherboard-drivers-not-installing-on-windows-server-2019/?do=findComment&comment=15176032>。
 
-- 去 AMD 的官网下载 Win10 版本的芯片组驱动： <https://www.amd.com/zh-hans/support/chipsets/amd-socket-am4/b550>，我下载的文件是 `amd_chipset_software_5.08.02.027.exe`。
-- 双击运行下载的文件，会自动解压到 `C:\AMD`，因为找不到对应的硬件，安装进行不下去。
+- 去 AMD 的官网下载 Win10 版本的芯片组驱动： <https://www.amd.com/zh-hans/support/chipsets/amd-socket-am4/b550>。
+- 双击运行下载的文件 `amd_chipset_software_5.08.02.027.exe`，会自动解压到 `C:\AMD`，因为找不到对应的硬件，安装进行不下去。
 - 打开 `C:\AMD\Chipset_Software\Packages\IODriver`，挨个进入子文件夹，手动运行里面的 `msi` 文件，观察设备管理器里未识别的设备，是否有变少。
 
 经过上面的操作后，我设备管理器里已经没有未识别的设备了，这时候再开启安全检查（同样的管理员身份运行CMD）：
