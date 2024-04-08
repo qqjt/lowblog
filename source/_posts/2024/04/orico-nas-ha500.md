@@ -54,6 +54,12 @@ tags: ["NAS"]
 顶部亚克力板尺寸如下图：
 ![diy-disk-case.png](diy-disk-case.png)
 
+托住硬盘的亚克力支架直接淘宝或拼多多购买：
+```
+【淘宝】https://m.tb.cn/h.5AccxRjmIBywPr9?tk=HJMWWKxnahG CZ0001 「硬盘堆叠支架兼容固态机械企业硬盘台式机3.5硬盘架多层可叠加2.5」
+点击链接直接打开 或者 淘宝搜索直接打开
+```
+
 如果想要更多 SATA 硬盘位，可以舍弃掉M.2 硬盘位，用 M.2 转SATA 的转接卡，理论上可行。
 
 ### 加 M.2 硬盘
