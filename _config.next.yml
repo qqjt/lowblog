@@ -708,7 +708,7 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io
 gitalk:
-  enable: true
+  enable: false
   github_id: qqjt # GitHub repo owner
   repo: lowblog # Repository name to store issues
   client_id: 57fdb23e375382f1c0ae # GitHub Application Client ID
