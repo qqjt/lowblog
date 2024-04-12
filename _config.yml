@@ -170,7 +170,7 @@ waline:
   # wordLimit: 0
 
   # Whether enable login, can choose from 'enable', 'disable' and 'force'
-  # login: enable
+  login: disable
 
   # comment per page
   # pageSize: 10
