@@ -3,9 +3,6 @@ title: vCard 虚拟信用卡
 date: 2024-04-12 15:59:21
 tags: ['虚拟信用卡', 'vCard']
 ---
-<style>
-img[alt=transactions] { width: 50%; }
-</style>
 
 继 Dupay(Depay)、OneKey Card 之后的虚拟信用卡新选择，可以用虚拟币 USDT 充值消费。背靠美股上市公司 **悦商集团（WETG.US）**，应该值得信赖吧。
 
@@ -54,3 +51,7 @@ img[alt=transactions] { width: 50%; }
 vCard 各卡头消费场景（<https://docs.qq.com/sheet/DZkpLRWduT2lZendS?tab=BB08J2>）：
 
 ![vcard-scenes.png](vcard-scenes.png)
+
+<style>
+img[alt=transactions] { width: 50%; }
+</style>
