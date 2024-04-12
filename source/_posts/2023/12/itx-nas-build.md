@@ -1,5 +1,6 @@
 ---
-title: 六盘位NAS装机记录
+title: 六盘位 ITX NAS 装机记录
+date: 2023-12-22
 tags: [ "NAS", "ITX" ]
 ---
 
@@ -31,4 +32,4 @@ tags: [ "NAS", "ITX" ]
 
 系统选择 Windows Server 2022 Datacenter，有图形界面就是好！相比于 PVE 或其他 NAS 系统，驱动安装更容易，而且我也需要 Windows 系统装软件，不用再跑个 Windows 虚拟机了。
 
-虚拟化我是 Hyper-V + VMWare Workstation 都要。Windows Server 上的 Hyper-V 相比 Windows 10/11 的，多了 DDA 功能，就是所谓的硬件直通。
+虚拟化我是 Hyper-V + VMWare Workstation。Windows Server 上的 Hyper-V 相比 Windows 10/11 的，多了 DDA 功能，就是所谓的硬件直通。

@@ -1,5 +1,6 @@
 ---
 title: 奥睿科 HA500 五盘位 NAS
+date: 2024-04-08
 tags: ["NAS"]
 ---
 
