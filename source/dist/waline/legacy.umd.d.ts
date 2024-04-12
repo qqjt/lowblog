@@ -38,7 +38,6 @@ interface WalineEmojiInfo {
      */
     items: string[];
 }
-type WalineEmojiMaps = Record<string, string>;
 type WalineLoginStatus = 'enable' | 'disable' | 'force';
 interface WalineSearchImageData extends Record<string, unknown> {
     /**
@@ -103,82 +102,6 @@ type WalineMeta = 'nick' | 'mail' | 'link';
 type WalineImageUploader = (image: File) => Promise<string>;
 type WalineHighlighter = (code: string, lang: string) => string;
 type WalineTeXRenderer = (blockMode: boolean, tex: string) => string;
-
-interface WalineCommentData {
-    /**
-     * User Nickname
-     */
-    nick: string;
-    /**
-     * User email
-     */
-    mail: string;
-    /**
-     * User link
-     */
-    link?: string;
-    /**
-     * Content of comment
-     */
-    comment: string;
-    /**
-     * User Agent
-     */
-    ua: string;
-    /**
-     * Parent comment id
-     */
-    pid?: string;
-    /**
-     * Root comment id
-     */
-    rid?: string;
-    /**
-     * User id being at
-     */
-    at?: string;
-    /**
-     * Comment link
-     */
-    url: string;
-    /**
-     * Recaptcha Token
-     */
-    recaptchaV3?: string;
-    /**
-     * Turnstile Token
-     */
-    turnstile?: string;
-}
-type WalineCommentStatus = 'approved' | 'waiting' | 'spam';
-interface WalineComment extends Exclude<WalineCommentData, 'ua'> {
-    /**
-     * User avatar
-     */
-    avatar: string;
-    /**
-     * User type
-     */
-    type?: 'administrator' | 'guest' | `verify:${string}`;
-    objectId: string;
-    /**
-     * Time ISOString when the comment is created
-     */
-    createdAt: string;
-    insertedAt: string;
-    updatedAt: string;
-    children: WalineComment[];
-    sticky?: boolean;
-    browser?: string;
-    os?: string;
-    level?: number;
-    addr?: string;
-    label?: string;
-    user_id?: string | number;
-    status?: WalineCommentStatus;
-    like?: number;
-    orig?: string;
-}
 
 interface WalineDateLocale {
     seconds: string;
@@ -494,44 +417,182 @@ interface WalineInitOptions extends Omit<WalineProps, 'path'> {
      */
     path?: string;
 }
-type WalineAbort = (reason?: any) => void;
 
-type Locales = Record<string, WalineLocale>;
-declare const DEFAULT_LOCALES: Locales;
-
-interface WalineCommentCountOptions {
+interface DeprecatedWalineOptions {
     /**
-     * Waline 服务端地址
+     * @deprecated Please use mathjax in server, dropped in V2
      *
-     * Waline server url
+     * 是否注入额外的样式添加对 `<math>` 块的兼容
+     *
+     * Whether injecting additional styles to support math block
+     *
+     * @default false
      */
-    serverURL: string;
+    mathTagSupport?: boolean;
     /**
-     * 评论数 CSS 选择器
+     * @deprecated use `pageview` instead, dropped in V2
      *
-     * Comment count CSS selector
+     * 文章访问量统计
      *
-     * @default '.waline-comment-count'
+     * Article reading statistics
+     *
+     * @default false
      */
-    selector?: string;
+    visitor?: boolean;
     /**
-     * 需要获取的默认路径
+     * @deprecated use `highlighter` instead, dropped in V2
      *
-     * Path to be fetched by default
+     * 代码高亮
      *
-     * @default window.location.pathname
+     * Code highlighting
      */
-    path?: string;
+    highlight?: WalineHighlighter | false;
     /**
-     * 错误提示消息所使用的语言
+     * @deprecated use `imageUploader` instead, dropped in V2
      *
-     * Language of error message
+     * 自定义图片上传方法，方便更好的存储图片
      *
-     * @default navigator.language
+     * 方法执行时会将图片对象传入。
+     *
+     * Custom image upload callback to manage picture by yourself.
+     *
+     * We will pass a picture file object when execute it.
      */
-    lang?: string;
+    uploadImage?: WalineImageUploader | false;
+    /**
+     * @deprecated Use `login` instead, dropped in V2
+     *
+     * 是否允许登录评论
+     *
+     * 默认情况是两者都支持，设置为 `true` 表示仅支持匿名评论，`false` 表示仅支持登录评论。
+     *
+     * Whether to allow login comments.
+     *
+     * Both supported by default, set to `true` means only support anonymous comments, `false` means only support login comments.
+     *
+     * @default undefined
+     */
+    anonymous?: boolean;
+    /**
+     * @deprecated Please use `AVATAR_PROXY` in server, dropped in V2
+     *
+     * 设置 Gravatar 头像 CDN 地址
+     *
+     * Gravatar CDN baseURL
+     *
+     * @default 'https://www.gravatar.com/avatar'
+     */
+    avatarCDN?: string;
+    /**
+     * @deprecated Use `texRenderer` instead, dropped in V2
+     *
+     * 自定义 TeX 处理方法，用于预览。
+     *
+     * Custom math formula parse callback for preview.
+     */
+    previewMath?: WalineTeXRenderer | false;
+    /**
+     * @deprecated use `copyright` instead, dropped in V2
+     *
+     * 是否在页脚展示版权信息
+     *
+     * 为了支持 Waline，我们强烈建议你开启它
+     *
+     * Whether show copyright in footer
+     *
+     * We strongly recommended you to keep it on to support waline
+     *
+     * @default true
+     */
+    copyRight?: boolean;
 }
-declare const commentCount: ({ serverURL, path, selector, lang, }: WalineCommentCountOptions) => WalineAbort;
+
+type DeprecatedAvatar = '' | 'mp' | 'identicon' | 'monsterid' | 'wavatar' | 'retro' | 'robohash' | 'hide';
+type DeprecatedEmojiMaps = Record<string, string>;
+interface DeprecatedValineOptions {
+    /**
+     * @deprecated Use `locale.placeholder` instead, dropped in V2
+     */
+    placeholder?: string;
+    /**
+     * @deprecated Use `locale` instead, dropped in V2
+     */
+    langMode?: Partial<WalineLocale>;
+    /**
+     * @deprecated Use `requiredMeta` instead, dropped in V2
+     */
+    requiredFields?: WalineMeta[];
+    /**
+     * @deprecated Please use `AVATAR_PROXY` in server, dropped in V2
+     *
+     * [Gravatar](http://cn.gravatar.com/) 头像展示方式
+     *
+     * 可选值:
+     *
+     * - `''`
+     * - `'mp'`
+     * - `'identicon'`
+     * - `'monsterid'`
+     * - `'wavatar'`
+     * - `'retro'`
+     * - `'robohash'`
+     * - `'hide'`
+     *
+     * [Gravatar](http://gravatar.com/) type
+     *
+     * Optional value:
+     *
+     * - `''`
+     * - `'mp'`
+     * - `'identicon'`
+     * - `'monsterid'`
+     * - `'wavatar'`
+     * - `'retro'`
+     * - `'robohash'`
+     * - `'hide'`
+     *
+     * @default 'mp'
+     */
+    avatar?: DeprecatedAvatar;
+    /**
+     * @deprecated no longer needed, dropped in V2
+     *
+     * 每次访问是否**强制**拉取最新的*评论列表头像*
+     *
+     * Whether **force** pulling the latest avatar each time
+     *
+     * @default false
+     */
+    avatarForce?: boolean;
+    /**
+     * @deprecated Use `emojis` instead, dropped in V2
+     *
+     * 设置**表情包 CDN**
+     *
+     * @see [自定义表情包](https://waline.js.org/client/emoji.html)
+     *
+     * Set **Emoji Pack CDN**
+     *
+     * @see [Custom Emoji](https://waline.js.org/en/client/emoji.html)
+     *
+     * @default 'https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/'
+     */
+    emojiCDN?: string;
+    /**
+     * @deprecated Use `emojis` instead, dropped in V2
+     *
+     * 设置**表情包映射**
+     *
+     * @see [自定义表情](https://waline.js.org/client/emoji.html)
+     *
+     * Set **emoji maps**
+     *
+     * @see [Custom Emoji](https://waline.js.org/en/client/emoji.html)
+     *
+     * @default 微博表情包
+     */
+    emojiMaps?: DeprecatedEmojiMaps;
+}
 
 interface WalineInstance {
     /**
@@ -561,158 +622,7 @@ interface WalineInstance {
      */
     destroy: () => void;
 }
-declare const init: ({ el, path, comment, pageview, ...initProps }: WalineInitOptions) => WalineInstance | null;
 
-interface WalinePageviewCountOptions {
-    /**
-     * Waline 服务端地址
-     *
-     * Waline server url
-     */
-    serverURL: string;
-    /**
-     * 浏览量 CSS 选择器
-     *
-     * Pageview CSS selector
-     *
-     * @default '.waline-pageview-count'
-     */
-    selector?: string;
-    /**
-     * 需要更新和获取的路径
-     *
-     * Path to be fetched and updated
-     *
-     * @default window.location.pathname
-     */
-    path?: string;
-    /**
-     * 是否在查询时更新 path 的浏览量
-     *
-     * Whether update pageviews when fetching path result
-     *
-     * @default true
-     */
-    update?: boolean;
-    /**
-     * 错误提示消息所使用的语言
-     *
-     * Language of error message
-     *
-     * @default navigator.language
-     */
-    lang?: string;
-}
-declare const pageviewCount: ({ serverURL, path, selector, update, lang, }: WalinePageviewCountOptions) => WalineAbort;
+declare function legacyWaline(options: WalineInitOptions & DeprecatedValineOptions & DeprecatedWalineOptions): WalineInstance | null;
 
-declare const version: string;
-
-interface WalineRecentCommentsOptions {
-    /**
-     * Waline 服务端地址
-     *
-     * Waline serverURL
-     */
-    serverURL: string;
-    /**
-     * 获取最新评论的数量
-     *
-     * fetch number of latest comments
-     */
-    count: number;
-    /**
-     * 需要挂载的元素
-     *
-     * Element to be mounted
-     */
-    el?: string | HTMLElement;
-    /**
-     * 错误提示消息所使用的语言
-     *
-     * Language of error message
-     *
-     * @default navigator.language
-     */
-    lang?: string;
-}
-interface WalineRecentCommentsResult {
-    /**
-     * 评论数据
-     *
-     * Comment Data
-     */
-    comments: WalineComment[];
-    /**
-     * 取消挂载挂件
-     *
-     * Umount widget
-     */
-    destroy: () => void;
-}
-declare const RecentComments: ({ el, serverURL, count, lang, }: WalineRecentCommentsOptions) => Promise<WalineRecentCommentsResult>;
-
-interface WalineUser extends Pick<WalineComment, 'nick' | 'link' | 'avatar' | 'label' | 'level'> {
-    count: number;
-}
-
-interface WalineUserListOptions {
-    /**
-     * Waline 服务端地址
-     *
-     * Waline serverURL
-     */
-    serverURL: string;
-    /**
-     * 获取用户列表的数量
-     *
-     * fetch number of user list
-     */
-    count: number;
-    /**
-     * 需要挂载的元素
-     *
-     * Element to be mounted
-     */
-    el?: string | HTMLElement;
-    /**
-     * 错误提示消息所使用的语言
-     *
-     * Language of error message
-     *
-     * @default navigator.language
-     */
-    lang?: string;
-    /**
-     * 自定义 waline 语言显示
-     *
-     * @see [自定义语言](https://waline.js.org/client/i18n.html)
-     *
-     * Custom display language in waline
-     *
-     * @see [I18n](https://waline.js.org/en/client/i18n.html)
-     */
-    locale?: WalineLocale;
-    /**
-     * 列表模式还是头像墙模式
-     *
-     * list mode or avatar wall mode
-     */
-    mode: 'list' | 'wall';
-}
-interface WalineUserListResult {
-    /**
-     * 用户数据
-     *
-     * User Data
-     */
-    users: WalineUser[];
-    /**
-     * 取消挂载挂件
-     *
-     * Umount widget
-     */
-    destroy: () => void;
-}
-declare const UserList: ({ el, serverURL, count, locale, lang, mode, }: WalineUserListOptions) => Promise<WalineUserListResult>;
-
-export { RecentComments, UserList, type WalineAbort, type WalineComment, type WalineCommentCountOptions, type WalineCommentData, type WalineCommentSorting, type WalineCommentStatus, type WalineDateLocale, type WalineEmojiInfo, type WalineEmojiMaps, type WalineEmojiPresets, type WalineHighlighter, type WalineImageUploader, type WalineInitOptions, type WalineInstance, type WalineLevelLocale, type WalineLocale, type WalineLoginStatus, type WalineMeta, type WalinePageviewCountOptions, type WalineProps, type WalineReactionLocale, type WalineRecentCommentsOptions, type WalineRecentCommentsResult, type WalineSearchImageData, type WalineSearchOptions, type WalineSearchResult, type WalineTeXRenderer, type WalineUserListOptions, type WalineUserListResult, commentCount, DEFAULT_LOCALES as defaultLocales, init, pageviewCount, version };
+export { type WalineInstance, legacyWaline as default };
