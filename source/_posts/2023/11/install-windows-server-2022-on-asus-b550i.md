@@ -1,6 +1,6 @@
 ---
 title: 华硕 B550i 主板安装 windows server 2022 并更新驱动
-tags: ['Windows Server 2022', 'B550', 'Asus', '驱动']
+tags: ['Windows', 'B550', 'Asus', '驱动']
 date: 2023-11-17
 updated: 2023-11-17
 ---
