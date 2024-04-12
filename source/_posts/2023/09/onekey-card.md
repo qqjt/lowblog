@@ -1,11 +1,14 @@
 ---
-title: Onekey Card虚拟信用卡
-tags: [ "虚拟信用卡", "Onekey" ]
+title: OneKey Card虚拟信用卡
+tags: [ "虚拟信用卡", "OneKey" ]
 ---
 
-Onekey 起初是做硬件钱包的，后来推出了
+先上 Referrer：<https://card.onekey.so/?i=3TY0RD>
 
-官网：<https://card.onekey.so/?i=3TY0RD>
+
+> 当前暂不支持中国大陆地区的用户进行 KYC 验证。
+
+[如何注册并激活 OneKey Card](https://help.onekey.so/hc/zh-cn/articles/6762124467343-%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E5%B9%B6%E6%BF%80%E6%B4%BB-OneKey-Card)
 
 ## 注册账号
 
