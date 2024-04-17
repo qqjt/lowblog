@@ -12,11 +12,13 @@ tags: [ '虚拟信用卡', 'vCard' ]
 
 直接上链接：<https://webapp.51vcard.com/#InviteRegisterPage?inviteCode=118428>
 
+官方 Tg 群：<https://t.me/VCard_WTP>
+
 推荐码：
 
 > 118428
 
-通过推荐码成功注册并开卡的用户可以留言或 [Tg 联系](https://t.me/lowbi)，返 $5 现金红包。需要充卡费 USDT 也可以联系。
+通过推荐码成功注册并开卡的用户可以留言或 [Tg 联系](https://t.me/lowbi)，留下账号，返 $5。需要充值卡费 USDT 也可以联系。
 
 ## 卡片介绍
 
