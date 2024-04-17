@@ -1,10 +1,12 @@
 ---
 title: vCard 虚拟信用卡
 date: 2024-04-12 15:59:21
-tags: ['虚拟信用卡', 'vCard']
+updated: 2024-04-17 14:55:00
+tags: [ '虚拟信用卡', 'vCard' ]
 ---
 
-继 Dupay(Depay)、OneKey Card 之后的虚拟信用卡新选择，可以用虚拟币 USDT 充值消费。背靠美股上市公司 **悦商集团（WETG.US）**，应该值得信赖吧。
+继 Dupay(Depay)、OneKey Card 之后的虚拟信用卡新选择，可以用虚拟币 USDT 充值消费。背靠美股上市公司 **悦商集团（WETG.US）**
+，应该值得信赖吧。
 
 我目前试下来感觉费率较低且功能最全，值得推荐。
 
@@ -14,11 +16,12 @@ tags: ['虚拟信用卡', 'vCard']
 
 > 118428
 
-通过推荐码成功注册并开卡的用户可以留言或 [Tg 联系](https://t.me/lowbi)，返 $5 现金红包。
+通过推荐码成功注册并开卡的用户可以留言或 [Tg 联系](https://t.me/lowbi)，返 $5 现金红包。需要充卡费 USDT 也可以联系。
 
 ## 卡片介绍
 
 优点：
+
 * 费率较低。白金卡算下来比 OneKey Card 的 Silver 要低一些。
 * 有手机端App。可以方便地进行各种卡片操作，查看交易记录。
 * 卡种多，有实名/免实名选择，有实体卡可选。
@@ -50,8 +53,553 @@ tags: ['虚拟信用卡', 'vCard']
 
 vCard 各卡头消费场景（<https://docs.qq.com/sheet/DZkpLRWduT2lZendS?tab=BB08J2>）：
 
-![vcard-scenes.png](vcard-scenes.png)
+<table>
+    <tbody>
+    <tr>
+        <td class="title" colspan="7">vCard消费场景</td>
+    </tr>
+    <tr>
+        <td>平台/网站</td>
+        <td>中文简称</td>
+        <td>4859</td>
+        <td>5561</td>
+        <td>5319</td>
+        <td>4674</td>
+        <td>5229</td>
+    </tr>
+    <tr>
+        <td>GOOGLE CLOUD</td>
+        <td>谷歌云</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+    </tr>
+    <tr>
+        <td>GOOGLE ADS</td>
+        <td>谷歌广告</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+    </tr>
+    <tr>
+        <td>2CO.com</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Adobe</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>AGODA</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>AIRBNB</td>
+        <td>爱彼迎</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Alibaba</td>
+        <td>阿里</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>ALIEXPRESS</td>
+        <td>速卖通</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Alipay</td>
+        <td>支付宝</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>AMAZON</td>
+        <td>亚马逊</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>APPLE</td>
+        <td>苹果</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>AWS</td>
+        <td>亚马逊</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>BESTBUY</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Blizzard</td>
+        <td>暴雪</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Booking</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>CCBill</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>CHATGPT</td>
+        <td>GPT</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>CLOUDFLARE</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Ctrip</td>
+        <td>携程</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>DEPOP</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>EA</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>eBay</td>
+        <td></td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>FACEBOOK</td>
+        <td>脸书</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>FEDEX</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Foodpanda</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>GODADDY</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>GOOGLE</td>
+        <td>谷歌</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+    </tr>
+    <tr>
+        <td>GRAB</td>
+        <td></td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>NAMESILO</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Namecheap</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Helloriser</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>LETSGO</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Lazada</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>LinkedIn</td>
+        <td>领英</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>LIVE CHAT</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Meituan</td>
+        <td>美团</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>MIDJOURNEY</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>ONLYFANS</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>OPENAI</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>PAYPAL</td>
+        <td>贝宝</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>PDD</td>
+        <td>拼多多</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>POE.COM</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>RISER</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>SHEIN</td>
+        <td>希音</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>SHOPIFY</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>SHOPLAZZA</td>
+        <td>店匠</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Taobao</td>
+        <td>淘宝</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>TEMU</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Tencent Cloud</td>
+        <td>腾讯云</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>TIKTOK</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>TMOBILE</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>TRACFONE</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>Twitter</td>
+        <td>推特</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="not-ok">✗</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>VENMO</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>WALMART</td>
+        <td>沃尔玛</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    <tr>
+        <td>ZOOM</td>
+        <td></td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="not-ok">✗</td>
+    </tr>
+    </tbody>
+</table>
 
 <style>
 img[alt=transactions] { width: 50%; }
+table { border-collapse: collapse; }
+
+td {
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    padding: 2px 10px
+}
+
+td.title {
+    font-weight: bold;
+    background-color: #FF0000;
+    font-size: 16pt;
+}
+
+td.ok {
+    color: #006100;
+    font-size: 11pt;
+    background-color: #C6EFCE;
+}
+
+td.not-ok {
+    color: #9C0006;
+    font-size: 11pt;
+    background-color: #FFC7CE;
+}
 </style>
