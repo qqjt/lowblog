@@ -1,5 +1,5 @@
 ---
-title: vCard 虚拟信用卡
+title: vCard（维卡）虚拟信用卡
 date: 2024-04-12 15:59:21
 updated: 2024-04-17 14:55:00
 tags: [ '虚拟信用卡', 'vCard' ]
