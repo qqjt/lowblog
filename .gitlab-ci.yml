@@ -1,35 +1,7 @@
 # https://medium.com/@mutebg/using-gitlab-to-build-test-and-deploy-modern-front-end-applications-bc940501a1f6
-image: node:lts
+image: node:lts-buster
 
-stages:
-  - install
-  - build
-  - deploy
-
-install:
-  stage: install
-  script:
-    - npm install
-  artifacts:
-    name: "artifacts"
-    untracked: true
-    expire_in: 60 mins
-    paths:
-      - .npm/
-      - node_modules/
-
-build:
-  stage: build
-  script:
-    - CI=false npm run build
-  artifacts:
-    paths:
-      - build
-    expire_in: 60 mins
-  dependencies:
-    - install
-
-deploy:
+deploy_production:
   cache:
     paths:
       - node_modules/
@@ -47,11 +19,11 @@ deploy:
     - chmod 0400 id_rsa
   script:
     - npm install
-    - npm run docs:build
-    - rsync -avuz -e 'ssh -i id_rsa' public/* $PRODUCTION_SERVER
+    - npm run build
+    - rsync -avuz -e "ssh -i id_rsa -p $PRODUCTION_SERVER_SSH_PORT" public/* $PRODUCTION_SERVER
   artifacts:
     paths:
-      - public
+      - public/
   environment:
     name: production
     url: https://low.bi
