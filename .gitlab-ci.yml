@@ -1,9 +1,9 @@
+# https://medium.com/@mutebg/using-gitlab-to-build-test-and-deploy-modern-front-end-applications-bc940501a1f6
 image: node:lts
 
 stages:
   - install
   - build
-
 
 install:
   stage: install
@@ -27,3 +27,30 @@ build:
     expire_in: 60 mins
   dependencies:
     - install
+
+deploy:
+  cache:
+    paths:
+      - node_modules/
+  only:
+    - master
+  stage: deploy
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - 'which rsync || ( apt-get update -y && apt-get install rsync -y )'
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ssh-add <(echo "$PRODUCTION_PRIVATE_KEY")
+    - echo "$PRODUCTION_PRIVATE_KEY" > id_rsa
+    - chmod 0400 id_rsa
+  script:
+    - npm install
+    - npm run docs:build
+    - rsync -avuz -e 'ssh -i id_rsa' public/* $PRODUCTION_SERVER
+  artifacts:
+    paths:
+      - public
+  environment:
+    name: production
+    url: https://low.bi
