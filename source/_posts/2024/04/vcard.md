@@ -1,7 +1,7 @@
 ---
 title: vCard（维卡）虚拟信用卡
 date: 2024-04-12 15:59:21
-updated: 2024-04-17 14:55:00
+updated: 2024-04-24 10:18:00
 tags: [ '虚拟信用卡', 'vCard' ]
 ---
 
@@ -39,6 +39,8 @@ tags: [ '虚拟信用卡', 'vCard' ]
 费用一览 <https://51vcard.com/#/cardEquity>：
 
 ![equity.png](vcard-equity.png)
+
+图里少了 Wayal 卡，卡头4674，免实名，费用大致相当于白金卡。
 
 我的一些实际消费记录：
 
