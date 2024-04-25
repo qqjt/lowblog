@@ -42,6 +42,7 @@ interface WalinePageviewCountOptions {
      */
     lang?: string;
 }
+
 declare const pageviewCount: ({ serverURL, path, selector, update, lang, }: WalinePageviewCountOptions) => WalineAbort;
 
-export { type WalinePageviewCountOptions, pageviewCount, version };
+export { type WalineAbort, type WalinePageviewCountOptions, pageviewCount, version };

@@ -129,7 +129,7 @@ waline:
   serverURL: https://c.low.bi
 
   # Waline library CDN url, you can set this to your preferred CDN
-  libUrl: https://low.bi/dist/waline/waline.js
+  libUrl: https://low.bi/dist/waline/waline.umd.js
 
   # Waline CSS styles CDN url, you can set this to your preferred CDN
   cssUrl: https://low.bi/dist/waline/waline.css

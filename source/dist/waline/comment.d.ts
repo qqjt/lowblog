@@ -32,8 +32,9 @@ interface WalineCommentCountOptions {
      */
     lang?: string;
 }
+
 declare const commentCount: ({ serverURL, path, selector, lang, }: WalineCommentCountOptions) => WalineAbort;
 
 declare const version: string;
 
-export { type WalineCommentCountOptions, commentCount, version };
+export { type WalineAbort, type WalineCommentCountOptions, commentCount, version };
