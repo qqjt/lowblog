@@ -9,17 +9,17 @@ tags: [ '虚拟信用卡', 'vCard' ]
 
 我目前试下来感觉费率较低且功能最全，值得推荐。
 
-直接上链接：<https://webapp.51vcard.com/#InviteRegisterPage?inviteCode=118428>
+直接上链接：<https://webapp.51vcard.com/#InviteRegisterPage?inviteCode=122188>
 
 官方 Tg 群：<https://t.me/VCard_WTP>
 
 推荐码：
 
-> 118428
+> 122188
 
 通过推荐码成功注册并开卡的用户可以 [Telegram 联系](https://t.me/lowbi) 或填下表单 <https://docs.google.com/forms/d/e/1FAIpQLSdumpzO_IwNH7s_83I1R3bSiOCc7xqPm4rIw112QfcoE9vzIw/viewform?usp=sf_link>，返 $10。
 
-没有 USDT 也可以 Telegram 联系我小额充值一些，按照交易所的出金汇率，先钱后U哦。
+没有 USDT 也可以 Telegram 联系我小额充值一些，按照交易所的出金汇率，先钱后 U 哦。
 
 ## 卡片介绍
 
