@@ -5,6 +5,8 @@ updated: 2024-08-21 16:00:00
 tags: [ '虚拟信用卡', 'vCard' ]
 ---
 
+2024-10-17 update: Onekey Card 服务准备下线了，又少了一个选择：[OneKey Card 服务下线公告](https://help.onekey.so/hc/zh-cn/articles/10825089327503-OneKey-Card-%E6%9C%8D%E5%8A%A1%E4%B8%8B%E7%BA%BF%E5%85%AC%E5%91%8A)。
+
 继 Dupay(Depay)、OneKey Card 之后的虚拟信用卡新选择，可以用虚拟币 USDT 充值消费。背靠美股上市公司 **悦商集团（WETG.US）**，应该值得信赖吧。
 
 我目前试下来感觉费率较低且功能最全，值得推荐。
@@ -17,7 +19,7 @@ tags: [ '虚拟信用卡', 'vCard' ]
 
 > 122188
 
-通过推荐码成功注册并开卡的用户可以 [Telegram 联系](https://t.me/lowbi) 或填下表单 <https://docs.google.com/forms/d/e/1FAIpQLSdumpzO_IwNH7s_83I1R3bSiOCc7xqPm4rIw112QfcoE9vzIw/viewform?usp=sf_link>，返 $10。
+通过推荐码成功注册并开卡的用户可以 [Telegram 联系](https://t.me/lowbi)我，返 $10。
 
 没有 USDT 也可以 Telegram 联系我小额充值一些，按照交易所的出金汇率，先钱后 U 哦。
 
