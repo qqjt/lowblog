@@ -126,3 +126,9 @@ sitemap:
   rel: false
   tags: true
   categories: true
+
+search:
+  path: search.json
+  field: post
+  content: true
+  format: html
