@@ -33,7 +33,7 @@ updated: 2024-10-01 09:30:00
 
 找了很久，最终选中的是 Fractal Design（分形工艺）的 Torrent 机箱，最大杯的那个。这款最大的特点是前面板 2个 180mm 大风扇，力大砖飞。机箱有7个PCIe槽位，把底部的风扇拆掉，刚好可以装下2个 3090。电源也在上方，不影响显卡进风：
 
-![torrent-case.png](torrent-case.png)
+![torrent-case.png](torrent-case-small.png)
 
 机箱外形很不错，设计也很合我心意，就是塑料件的质量有点堪忧，不愧是东莞工艺出品。机箱自带5个风扇，前面板2个 18CM，底部 3 个 14CM。
 
@@ -60,7 +60,7 @@ updated: 2024-10-01 09:30:00
 
 大机箱装机也比较简单，使用电源自带的模组线，随便搞搞咯。
 
-![torrent-case-pc-build.png](torrent-pc-build.png)
+![torrent-case-pc-build.png](torrent-pc-build-small.png)
 
 机箱底部的风扇位整个拿掉，拆一个风扇下来安装到尾部用来出风。前面板和底部进风，左右和上方封住，全靠尾部的 14CM 风扇出风，风道简单，风量够大。
 
@@ -68,7 +68,7 @@ updated: 2024-10-01 09:30:00
 
 装完机后发现噪音有点大，最大的噪音来源居然不是机箱风扇，而是电源风扇。电源拆开，里面是一个14CM风扇。
 
-![psu-fan.png](psu-fan.png)
+![psu-fan.png](psu-fan-small.png)
 
 手头刚好还有 2 个没用上的机箱底部风扇，换一个上去就好多了。新机箱风扇是 4 针的，电源里的风扇接口只有 2 针，转速信号线和PWM调速线只好不接了。
 
