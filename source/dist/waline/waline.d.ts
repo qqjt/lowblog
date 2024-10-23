@@ -462,7 +462,6 @@ interface WalineCommentCountOptions {
      */
     lang?: string;
 }
-
 declare const commentCount: ({ serverURL, path, selector, lang, }: WalineCommentCountOptions) => WalineAbort;
 
 interface WalineInstance {
@@ -535,7 +534,6 @@ interface WalinePageviewCountOptions {
      */
     lang?: string;
 }
-
 declare const pageviewCount: ({ serverURL, path, selector, update, lang, }: WalinePageviewCountOptions) => WalineAbort;
 
 declare const version: string;
