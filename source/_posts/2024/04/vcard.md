@@ -48,13 +48,13 @@ VCard（维卡，51vcard）是继 Dupay(Depay)、OneKey Card 之后的虚拟信�
 
 费用一览 <https://51vcard.com/#/cardEquity>：
 
-![equity.png](vcard-equity.png)
+![equity.png](vcard-equity-small.png)
 
 图里少了 Wayal 卡，卡头4674，免实名，费用大致相当于白金卡。
 
 我的一些实际消费记录：
 
-![transactions](vcard-transactions.jpg)
+![transactions](vcard-transactions-small.jpg)
 
 可以看到绑定支付宝，日常小额消费，手续费是比较高的，（$0.45 + $0.2），用来在美国商户注册或续费域名还是挺合适的。
 
