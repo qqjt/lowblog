@@ -11,13 +11,13 @@ tags: ["NAS"]
 一体抽拉结构，铝合金外壳，抽出来后，里面半边是硬盘笼，半边是主板+电源。
 
 正脸：
-![front.jpg](front.jpg)
+![front.jpg](front-small.jpg)
 
 侧面（下面是乔思伯V8，俩个差不多长）：
-![left.jpg](left.jpg)
+![left.jpg](left-small.jpg)
 
 尾部接口：
-![back.jpg](back.jpg)
+![back.jpg](back-small.jpg)
 
 ## 主要硬件参数
 
@@ -31,7 +31,7 @@ tags: ["NAS"]
 - 显示输出接口：1个HDMI接口。
 
 主板长这样：
-![motherboard.jpg](motherboard.jpg)
+![motherboard.jpg](motherboard-small.jpg)
 
 ## 价格
 我是 2024.03.26 闲鱼下单，￥820 + ￥40 到付运费，内存条拆了卖了￥270，相当于￥600买了个 N5105 主板+五盘位机箱 + 电源，感觉还是很划算的。
@@ -50,7 +50,7 @@ tags: ["NAS"]
 ![disk.jpg](disk.jpg)
 
 安装硬盘后侧面效果：
-![disk2.jpg](disk2.jpg)
+![disk2.jpg](disk2-small.jpg)
 
 顶部亚克力板尺寸如下图：
 ![diy-disk-case.png](diy-disk-case.png)
