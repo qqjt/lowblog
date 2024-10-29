@@ -960,7 +960,7 @@ waline:
   wordLimit: 1000
 
   # Whether enable login, can choose from 'enable', 'disable' and 'force'
-  login: disable
+  login: enable
 
   # comment per page
   pageSize: 100
