@@ -19,7 +19,7 @@ VCard（维卡，51vcard）是继 Dupay(Depay)、OneKey Card 之后的虚拟信�
 
 > 122188
 
-通过推荐码成功注册并开卡的用户可以 [Telegram 联系](https://t.me/lowbi)我，返 $10。
+通过推荐码成功注册并开卡的用户可以 [Telegram 联系](https://t.me/lowbi)我，或者在帖子下方留言时填上联系邮箱（不会在页面展示），返 $10。
 
 没有 USDT 也可以 Telegram 联系我小额充值一些，按照交易所的出金汇率，先钱后 U 哦。
 
