@@ -5,15 +5,21 @@ tags: ["CPE"]
 
 最近临时需要搞个流量上网，需要个可以插流量卡的路由器，我在闲鱼找了一圈，买了个 5G CPE 试试。型号叫 上赞 R200C，入手价格是 ￥340。
 
+![r200c-front.jpg](r200c-front-small.jpg)
+
 ## 外观与硬件参数
 
 据说是与超能犇一样的硬件配置，也都是品速的贴牌货。同级别是 R200S，高级一点的型号是 R200，价格都要贵一些。
 
 芯片是高通 QCX315，应该比展锐的芯片发热低一些。
 
+![r200c-ports.jpg](r200c-ports-small.jpg)
+
 接口包括一个USB Type-C 口，供电和刷机都靠它，一个LAN口可以插网线上网。
 
 机身上还有一个 Nano SIM 卡槽，一个重置孔。附带的电源是5V2A。
+
+![r200c-bottom.jpg](r200c-bottom-small.jpg)
 
 ## 刷机&刷WEBUI
 
