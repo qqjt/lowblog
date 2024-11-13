@@ -8,8 +8,7 @@ date: 2024-11-13
 
 ## 硬件信息：
 
-- CPU Intel Atom D2550：[Intel Atom® Processor D2550
-1M Cache, 1.86 GHz](https://www.intel.com/content/www/us/en/products/sku/65470/intel-atom-processor-d2550-1m-cache-1-86-ghz/specifications.html)
+- CPU Intel Atom D2550：[Intel Atom® Processor D2550 1M Cache, 1.86 GHz](https://www.intel.com/content/www/us/en/products/sku/65470/intel-atom-processor-d2550-1m-cache-1-86-ghz/specifications.html)
 - 四个 3.5 寸硬盘位（注意默认不支持 2.5 寸硬盘）。
 - 2个USB3，2个USB2，2个千兆网口。
 - 前面板 1 个 VGA 视频接口。
@@ -21,19 +20,23 @@ CPU 有点老古董了，32nm 工艺，也不支持虚拟化技术，装 PVE 没
 
 ## 黑群晖引导
 
-使用 [rr 引导](https://github.com/RROrg/rr) ，版本是 `rr-24.11.1.img`。用 Rufus 将 img 文件刻录到U盘里，再设置下BIOS 通过U盘启动，按部就班地操作就行。
+有 VGA 接口，装系统挺方便的。
+
+装黑群晖使用 [rr 引导](https://github.com/RROrg/rr) 就行，这会版本是 `rr-24.11.1.img`。用 Rufus 将 img 文件刻录到U盘里，再设置下BIOS 通过U盘启动，按部就班地操作就行。
+
+尾部有个拨动开关，也拨到 USB 启动。
 
 ## 升级内存
 
 因为主板限制，最大只能到 4G: <https://forums.buffalotech.com/index.php?topic=39190.0>
 
-买了一根 1.5V 电压的 DDR3 4G 内存条，还没装上去。不知道 DDR3L 内存条行不行。
+买了一根 1.5V 电压的 DDR3 4G 内存条，还没装上去。也不知道 DDR3L 内存条行不行。
 
 ## 风扇速度控制
 
 默认启动后，风扇狂转，噪音有点烦人，要使用 pwm 控速。需要在 rr 引导的配置界面 Addons 里添加 `sensors`，重新 build 后启动。
 
-参考：<https://forums.buffalotech.com/index.php?topic=39190.0>，运行 `Fancontrol` 脚本。
+参考：<https://rrorg.cn/archives/fancontrol>，运行 `Fancontrol` 脚本。
 
 `/etc/fancontrol` 配置（之前安装 debian 系统配置过，直接拿来用了）：
 ```
