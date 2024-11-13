@@ -1,5 +1,6 @@
 ---
 title: 上赞 R200C 5G CPE 小玩一下
+date: "2024-11-11"
 tags: ["CPE"]
 ---
 
