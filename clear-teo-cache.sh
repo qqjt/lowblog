@@ -6,6 +6,12 @@ files=($(git diff-tree --no-commit-id --name-only -r $CI_COMMIT_SHA))
 for file in "${files[@]}"; do
     echo "$file"
 done
+
+echo "$BASE_URL"
+echo "$TENCENTCLOUD_SECRET_ID"
+echo "$TENCENTCLOUD_SECRET_KEY"
+echo "$TENCENTCLOUD_TEO_ZONE_ID"
+
 export BASE_URL=$BASE_URL
 export TENCENTCLOUD_SECRET_ID=$TENCENTCLOUD_SECRET_ID
 export TENCENTCLOUD_SECRET_KEY=$TENCENTCLOUD_SECRET_KEY
