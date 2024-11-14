@@ -18,19 +18,29 @@ TS5400D_datasheet: <http://buffalo.jp/support_ap/datasheet/TS5400D.pdf>
 
 CPU 有点老古董了，32nm 工艺，也不支持虚拟化技术，装 PVE 没啥用，幸好可以正常运行 docker。
 
-## 黑群晖引导
+拆开外壳就能看到内置的电源，线圈电容直接裸露在外面，有点粗暴：
 
-有 VGA 接口，装系统挺方便的。
+![ts5400d-psu.jpg](ts5400d-psu.jpg)
 
-装黑群晖使用 [rr 引导](https://github.com/RROrg/rr) 就行，这会版本是 `rr-24.11.1.img`。用 Rufus 将 img 文件刻录到U盘里，再设置下BIOS 通过U盘启动，按部就班地操作就行。
+主板长这样，有个插槽与硬盘背板连接：
 
-尾部有个拨动开关，也拨到 USB 启动。
+![ts5400d-motherboard.jpg](ts5400d-motherboard.jpg)
 
 ## 升级内存
 
 因为主板限制，最大只能到 4G: <https://forums.buffalotech.com/index.php?topic=39190.0>
 
-买了一根 1.5V 电压的 DDR3 4G 内存条，还没装上去。也不知道 DDR3L 内存条行不行。
+买了一根 1.35V 的 DDR3L 内存条，可以正常使用。
+
+## 黑群晖引导
+
+有 VGA 接口，装系统挺方便的。
+
+装黑群晖使用 [rr 引导](https://github.com/RROrg/rr) 就行，这会版本是 `rr-24.11.1.img`。用 Rufus 将 img 文件刻录到U盘里，再设置下BIOS 通过U盘启动，按部就班地操作就行。尾部有个拨动开关，也拨到 USB 启动。
+
+DSM 7.2，型号选的是 SA6400，黑群晖启动成功正常显示：
+
+![ts5400d-synology-info.png](ts5400d-synology-info.png)
 
 ## 风扇速度控制
 
