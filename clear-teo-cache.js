@@ -10,6 +10,31 @@ let urlPrefix = process.env.URL_PREFIX;
 const secretId = process.env.TENCENTCLOUD_SECRET_ID
 const secretKey = process.env.TENCENTCLOUD_SECRET_KEY
 const zoneId = process.env.TENCENTCLOUD_TEO_ZONE_ID
+/**
+ * call CreatePurgeTask api
+ * @param urlList
+ */
+const clearTeoCache = (urlList) => {
+  const client = new TeoClient({
+    credential: {
+      secretId: secretId,
+      secretKey: secretKey,
+    }
+  })
+  const data = {
+    "Targets": urlList,
+    "Type": "purge_url",
+    "ZoneId": zoneId
+  }
+  client.CreatePurgeTask(data).then(
+    (data) => {
+      console.log(data)
+    },
+    (err) => {
+      console.error("error", err)
+    }
+  )
+}
 
 urlPrefix = urlPrefix.trim()
 if (urlPrefix) {
@@ -45,25 +70,6 @@ if (clearList.length) {
   clearList.push(`${urlPrefix}archives/`)
 }
 console.log(clearList);
-const clearTeoCache = (urlList) => {
-  const client = new TeoClient({
-    credential: {
-      secretId: secretId,
-      secretKey: secretKey,
-    }
-  })
-  const data = {
-    "Targets": urlList,
-    "Type": "purge_url",
-    "ZoneId": zoneId
-  }
-  client.CreatePurgeTask(data).then(
-    (data) => {
-      console.log(data)
-    },
-    (err) => {
-      console.error("error", err)
-    }
-  )
+if (clearList.length) {
+  clearTeoCache(clearList)
 }
-clearTeoCache(clearList)
