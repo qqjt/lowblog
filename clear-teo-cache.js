@@ -6,10 +6,22 @@ const TeoClient = tencentCloud.teo.v20220901.Client
 const args = process.argv.slice(2);
 console.log("Arguments:", args);
 
-let urlPrefix = process.env.URL_PREFIX;
+let baseUrl = process.env.BASE_URL;
 const secretId = process.env.TENCENTCLOUD_SECRET_ID
 const secretKey = process.env.TENCENTCLOUD_SECRET_KEY
 const zoneId = process.env.TENCENTCLOUD_TEO_ZONE_ID
+
+if (baseUrl) {
+  if (!baseUrl.endsWith('/')) {
+    baseUrl = `${baseUrl}/`;
+  }
+}
+
+if (!baseUrl || !secretId || !secretKey || !zoneId) {
+  console.warn('not enough env variables')
+  process.exit()
+}
+
 /**
  * call CreatePurgeTask api
  * @param urlList
@@ -36,13 +48,11 @@ const clearTeoCache = (urlList) => {
   )
 }
 
-urlPrefix = urlPrefix.trim()
-if (urlPrefix) {
-  if (!urlPrefix.endsWith('/')) {
-    urlPrefix = `${urlPrefix}/`;
-  }
-}
-
+/**
+ * build url from file
+ * @param filePath
+ * @returns {string}
+ */
 const filePathUri = (filePath) => {
   const pathParts = filePath.split("/");
   if (pathParts.length > 1) {
@@ -59,17 +69,20 @@ const filePathUri = (filePath) => {
   return ''
 }
 
-let clearList = []
-for (let filePath of args) {
-  const uri = filePathUri(filePath)
-  if (uri) {
-    clearList.push(`${urlPrefix}${uri}`);
+const main = () => {
+  let clearList = []
+  for (let filePath of args) {
+    const uri = filePathUri(filePath)
+    if (uri) {
+      clearList.push(`${baseUrl}${uri}`);
+    }
+  }
+  if (clearList.length) {
+    clearList.push(`${baseUrl}archives/`)
+  }
+  console.log(clearList);
+  if (clearList.length) {
+    clearTeoCache(clearList)
   }
 }
-if (clearList.length) {
-  clearList.push(`${urlPrefix}archives/`)
-}
-console.log(clearList);
-if (clearList.length) {
-  clearTeoCache(clearList)
-}
+main()
