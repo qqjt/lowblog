@@ -21,7 +21,7 @@ deploy_production:
     - npm install
     - npm run build
     - rsync -avuz -e "ssh -i id_rsa -p $PRODUCTION_SERVER_SSH_PORT" public/* $PRODUCTION_SERVER
-    - ./clear-teo-cache.sh $CI_COMMIT_SHA
+    - ./clear-teo-cache.sh
   artifacts:
     paths:
       - public/
