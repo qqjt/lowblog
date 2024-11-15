@@ -4,6 +4,9 @@ date: 2023-09-25
 tags: [ "虚拟信用卡", "OneKey" ]
 ---
 
+
+**已官宣停止运营，这篇文章已过期！！！**
+
 先上 Referrer：<https://card.onekey.so/?i=3TY0RD>
 
 
