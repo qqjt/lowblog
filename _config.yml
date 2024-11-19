@@ -28,7 +28,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: [dist, baidu_verify_codeva-cjOj3AtWYf.html]
+skip_render: ["dist", "baidu_verify_codeva-cjOj3AtWYf.html", "robots.txt"]
 
 # Writing
 new_post_name: :title.md # File name of new posts
