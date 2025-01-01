@@ -1,7 +1,7 @@
 ---
 title: Linux 桌面环境常用软件安装
 date: 2023-03-31
-updated: 2023-03-31
+updated: 2025-01-01
 ---
 ## 
 ```shell
@@ -58,7 +58,10 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
 
-
+## Joplin
+```shell
+ wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+```
 
 ## Software
 
