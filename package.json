@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@next-theme/plugins": "^8.21.1",
-    "@waline/client": "^3.3.0",
+    "@waline/client": "^3.4.3",
     "@waline/hexo-next": "^3.0.1",
     "hexo": "^7.3.0",
     "hexo-generator-archive": "^2.0.0",
