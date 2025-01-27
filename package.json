@@ -28,6 +28,6 @@
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-next": "github:next-theme/hexo-theme-next",
-    "tencentcloud-sdk-nodejs-teo": "^4.0.969"
+    "tencentcloud-sdk-nodejs-teo": "^4.0.1021"
   }
 }
